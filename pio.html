@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>برمجة 3 - المحتوى التعليمي</title>
+    <title>كلية الهندسة المعلوماتية - لوحة المواد</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -11,174 +11,72 @@
         
         body {
             font-family: 'Cairo', sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f8f9fa;
         }
 
-        .lecture-item {
-            background-color: white;
-            padding: 10px;
-            margin-bottom: 10px;
+        .card-body a{
+            border: #00bbff;
+            background-color: #00bbff !important;
+
+        }
+
+        .course-card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .progress {
+            height: 10px;
             border-radius: 5px;
-            border: 1px solid #ddd;
-            cursor: pointer;
         }
 
-        .completed {
-            color: #198754;
+        .card-header {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .uncompleted {
-            color: #ddd;
+        .progress-green {
+            background-color: #00bbff !important;
         }
-    </style>
-</head>
-<body>
-    
-    <div class="container py-5">
-  
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Pharmacy Quiz</title>
-            <style>
-                body {
-                    font-family: 'Poppins', sans-serif;
-                    background: linear-gradient(135deg, #ffffff, #00bbff);
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    min-height: 100vh;
-                    color: #fff;
-                }
-        
-                .quiz-container {
-                    background: rgba(255, 255, 255, 0.9);
-                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-                    border-radius: 20px;
-                    padding: 30px;
-                    max-width: 700px;
-                    width: 90%;
-                    text-align: center;
-                }
-        
-                .quiz-header {
-                    margin-bottom: 30px;
-                }
-        
-                .quiz-header h1 {
-                    font-size: 28px;
-                    color: #333;
-                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-                }
-        
-                .question {
-                    font-size: 20px;
-                    margin-bottom: 20px;
-                    color: #444;
-                }
-        
-                .options {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                }
-        
-                .options li {
-                    margin-bottom: 15px;
-                }
-        
-                .options button {
-                    width: 100%;
-                    padding: 15px;
-                    font-size: 18px;
-                    border: none;
-                    border-radius: 10px;
-                    cursor: pointer;
-                    background-color: #2575fc;
-                    color: #fff;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-                    transition: transform 0.3s, background-color 0.3s;
-                }
-        
-                .options button:hover {
-                    background-color: #6a11cb;
-                    transform: scale(1.05);
-                }
-        
-                .options button.correct {
-                    background-color: #28a745 !important;
-                }
-        
-                .options button.wrong {
-                    background-color: #dc3545 !important;
-                }
-        
-                .next-btn {
-                    display: none;
-                    margin-top: 30px;
-                    padding: 12px 30px;
-                    font-size: 18px;
-                    border: none;
-                    border-radius: 10px;
-                    background-color: #6a11cb;
-                    color: #fff;
-                    cursor: pointer;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-                    transition: transform 0.3s, background-color 0.3s;
-                }
-        
-                .next-btn:hover {
-                    background-color: #2575fc;
-                    transform: scale(1.05);
-                }
-                #score-container {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #ccc;
-    max-width: 400px;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-#score-container h3 {
-    color: #2c3e50;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+        .progress-yellow {
+            background-color: #00bbff !important;
+        }
 
-#score-container p {
-    font-size: 18px;
-    color: #34495e;
-    margin-bottom: 10px;
-}
+        .progress-red {
+            background-color: #00bbff !important;
+        }
 
-#score-container p span {
-    font-weight: bold;
-}
+        .header-green {
+            background-color: #00bbff !important;
+        }
 
-#correct-answers, #total-questions {
-    color: #27ae60;
-}
+        .header-yellow {
+            background-color: #00bbff !important;
+        }
 
-#percentage {
-    color: #e67e22;
-}
+        .header-red {
+            background-color: #00bbff !important;
+        }
 
-#score-container div {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #2980b9;
-    color: white;
-    font-size: 18px;
-    border-radius: 5px;
-}
+        .card-green {
+            border-color: #00bbff;
+        }
+
+        .card-yellow {
+            border-color: #00bbff;
+        }
+
+        .card-red {
+            border-color: #00bbff;
+        }
 
         .navbar {
             background-color: #00bbff;
@@ -211,221 +109,389 @@
         .action-icon:hover {
             opacity: 0.8;
         }
-
     </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">كلية  الصيدلة</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-book"></i> المواد</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-book"></i> المواد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i>  المطور</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            </style>
+    <div class="container py-4">
+        <!DOCTYPE html>
+        <html dir="rtl" lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>برمجة 3 - المحتوى التعليمي</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+                
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    background-color: #f5f5f5;
+                }
+        
+          </style>
         </head>
         <body>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="#">كلية  الصيدلة</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-home"></i> الرئيسية</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-book"></i> المواد</a>
-                            </li>
-                            <li class="nav-item">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-book"></i> المواد</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-user"></i>  المطور</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            
+            <div class="container py-5">
+                    <style>
+                        body {
+                            font-family: 'Poppins', sans-serif;
+                            background: linear-gradient(135deg, #ffffff, #00bbff);
+                            margin: 0;
+                            padding: 0;
+                            justify-content: center;
+                            align-items: center;
+                            min-height: 100vh;
+                            color: #fff;
+                        }
+                
+                        .quiz-container {
+                            background: rgba(255, 255, 255, 0.9);
+                            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+                            border-radius: 20px;
+                            padding: 30px;
+                            max-width: 700px;
+                            width: 90%;
+                            text-align: center;
+                        }
+                
+                        .quiz-header {
+                            margin-bottom: 30px;
+                        }
+                
+                        .quiz-header h1 {
+                            font-size: 28px;
+                            color: #333;
+                            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                        }
+                
+                        .question {
+                            font-size: 20px;
+                            margin-bottom: 20px;
+                            color: #444;
+                        }
+                
+                        .options {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+                
+                        .options li {
+                            margin-bottom: 15px;
+                        }
+                
+                        .options button {
+                            width: 100%;
+                            padding: 15px;
+                            font-size: 18px;
+                            border: none;
+                            border-radius: 10px;
+                            cursor: pointer;
+                            background-color: #2575fc;
+                            color: #fff;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                            transition: transform 0.3s, background-color 0.3s;
+                        }
+                
+                        .options button:hover {
+                            background-color: #6a11cb;
+                            transform: scale(1.05);
+                        }
+                
+                        .options button.correct {
+                            background-color: #28a745 !important;
+                        }
+                
+                        .options button.wrong {
+                            background-color: #dc3545 !important;
+                        }
+                
+                        .next-btn {
+                            display: none;
+                            margin-top: 30px;
+                            padding: 12px 30px;
+                            font-size: 18px;
+                            border: none;
+                            border-radius: 10px;
+                            background-color: #6a11cb;
+                            color: #fff;
+                            cursor: pointer;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                            transition: transform 0.3s, background-color 0.3s;
+                        }
+                
+                        .next-btn:hover {
+                            background-color: #2575fc;
+                            transform: scale(1.05);
+                        }
+                        #score-container {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            max-width: 400px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        #score-container h3 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        #score-container p {
+            font-size: 18px;
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+        
+        #score-container p span {
+            font-weight: bold;
+        }
+        
+        #correct-answers, #total-questions {
+            color: #27ae60;
+        }
+        
+        #percentage {
+            color: #e67e22;
+        }
+        
+        #score-container div {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        
+        
+            </style>
+        
+                    </style>
+                </head>
 
-            <a href="index.html" class="btn btn-outline-primary mb-4">
-                <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
-            </a>
-            <div class="quiz-container">
-                <div class="quiz-header">
-                    <h1> Quiz</h1>
-                </div>
-                <div id="quiz">
-                    <p class="question"> هل انت جاهز ؟ </p>
-                    <ul class="options">
-                        <li><button onclick="checkAnswer(this, true)"> نعم</button></li>
-                        <li><button onclick="checkAnswer(this, true)">لا </button></li>
-                    </ul>
-                </div>
-                <center><button id="next-btn" class="next-btn" onclick="loadNextQuestion()">Next Question</button></center>
-                <div id="score-container">
-                    <p>الإجابات الصحيحة: <span id="correct-answers">0</span> من <span id="total-questions">0</span></p>
-                    <p>النسبة: <span id="percentage">0%</span></p>
-                </div>
-            </div>
-            
-            <script>
-                const questions = [
-                    {
-                        question: "ما هي نسبة الكولسترول في الأغشية الخلوية؟",
-                        options: [
-                            "5%",
-                            "9%",
-                            "15%",
-                            "20%"
-                        ],
-                        correct: 1
-                    },
-                    {
-                        question: "ما الذي تسببه زيادة الكولسترول في الغشاء الخلوي؟",
-                        options: [
-                            "يزيد من المرونة",
-                            "يسبب ضعف في الغشاء",
-                            "يزيد من الصلابة والمقاومة",
-                            "يقلل من حجم الغشاء"
-                        ],
-                        correct: 2
-                    },
-                    {
-                        question: "ما هي العلاقة بين الكولسترول وأغشية خلايا شوان؟",
-                        options: [
-                            "يحتوي على نسبة منخفضة من الكولسترول",
-                            "يحتوي على أعلى نسبة من الكولسترول مقارنة ببقية خلايا الجسم",
-                            "لا يحتوي على الكولسترول",
-                            "يحتوي على نسبة متوسطة من الكولسترول"
-                        ],
-                        correct: 1
-                    },
-                    {
-                        question: "ما هي الشحوم التي توجد بكميات قليلة في الأغشية الخلوية؟",
-                        options: [
-                            "الشحوم السكرية",
-                            "الشحوم المعتدلة (الغليسيريدات الثلاثية)",
-                            "الشحوم الفوسفورية",
-                            "الشحوم الأحادية"
-                        ],
-                        correct: 1
-                    },
-                    {
-                        question: "أين تتركز الشحوم السكرية بكثرة في الأغشية الخلوية؟",
-                        options: [
-                            "في الوريقة الداخلية من الطبقة الشحمية",
-                            "في الوريقة الخارجية من الطبقة الشحمية",
-                            "في السيتوبلازم",
-                            "في النواة"
-                        ],
-                        correct: 1
-                    },
-                    {
-                        question: "ماذا يعتقد أن دور الشحوم السكرية في الوريقة الخارجية؟",
-                        options: [
-                            "أن تكون جزءاً من الهيكل الخلوي",
-                            "مساعدة في تعرف خلايا الجملة المناعية على خلايا الجسم نفسه",
-                            "زيادة مرونة الغشاء",
-                            "تقوية الغشاء ضد المؤثرات الخارجية"
-                        ],
-                        correct: 1
-                    },
-                    {
-                        question: "ما هو توزع الفوسفوليبيدات في معظم الأغشية الخلوية؟",
-                        options: [
-                            "متماثل في جميع مناطق الغشاء",
-                            "غير متماثل في بعض الخلايا مثل كريات الدم الحمراء",
-                            "موزع بشكل عشوائي",
-                            "لا يتوزع بشكل معين"
-                        ],
-                        correct: 1
-                    },
-                    {
-                        question: "أي من الفوسفوليبيدات يميل للوجود في الوريقة الداخلية للغشاء؟",
-                        options: [
-                            "فوسفاتيديل كولين",
-                            "فوسفاتيديل سيرين",
-                            "فوسفاتيديل إيتانول أمين",
-                            "ب و ج"
-                        ],
-                        correct: 3
-                    },
-                    {
-                        question: "أي من الفوسفوليبيدات يميل للوجود في الوريقة الخارجية للغشاء؟",
-                        options: [
-                            "فوسفاتيديل سيرين",
-                            "فوسفاتيديل إيتانول أمين",
-                            "فوسفاتيديل كولين",
-                            "فوسفاتيديل جلوكوز"
-                        ],
-                        correct: 2
-                    },
-                    {
-                        question: "ما هو دور الكولسترول في خلايا شوان؟",
-                        options: [
-                            "زيادة المرونة",
-                            "زيادة العزل الكهربائي",
-                            "تحسين عملية التمثيل الغذائي",
-                            "تقليل التكاثر الخلوي"
-                        ],
-                        correct: 1
-                    }
-                ];
-            
-                let currentQuestionIndex = 0;
-                let correctAnswers = 0;  // متغير لحساب الإجابات الصحيحة
-            
-                function checkAnswer(button, isCorrect) {
-                    const buttons = document.querySelectorAll(".options button");
-                    buttons.forEach(btn => btn.disabled = true);
-            
-                    if (isCorrect) {
-                        button.classList.add("correct");
-                        correctAnswers++;  // زيادة عدد الإجابات الصحيحة
-                    } else {
-                        button.classList.add("wrong");
-                        buttons[questions[currentQuestionIndex].correct].classList.add("correct");
-                    }
-            
-                    // تحديث العداد والنسبة
-                    updateScore();
+        
+                    <a href="index.html" class="btn btn-outline-primary mb-4">
+                        <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
+                    </a>
+                    <div class="quiz-container">
+                        <div class="quiz-header">
+                            <h1> Quiz</h1>
+                        </div>
+                        <div id="quiz">
+                            <p class="question"> هل انت جاهز ؟ </p>
+                            <ul class="options">
+                                <li><button onclick="checkAnswer(this, true)"> نعم</button></li>
+                                <li><button onclick="checkAnswer(this, true)">لا </button></li>
+                            </ul>
+                        </div>
+                        <center><button id="next-btn" class="next-btn" onclick="loadNextQuestion()">Next Question</button></center>
+                        <div id="score-container">
+                            <p>الإجابات الصحيحة: <span id="correct-answers">0</span> من <span id="total-questions">0</span></p>
+                            <p>النسبة: <span id="percentage">0%</span></p>
+                        </div>
+                    </div>
                     
-                    document.getElementById("next-btn").style.display = "block";
-                }
-            
-                function loadNextQuestion() {
-                    currentQuestionIndex++;
-            
-                    if (currentQuestionIndex >= questions.length) {
-                        // عند الانتهاء من الأسئلة
-                        const scorePercentage = (correctAnswers / questions.length) * 100;
-                        document.querySelector(".quiz-container").innerHTML = `
-                            <h1 style='color: black;'>انتهى الاختبار</h1>
-                            <p style='color: black;'>عمل جيد</p>
-                            <p>الإجابات الصحيحة: ${correctAnswers} من ${questions.length}</p>
-                            <p>النسبة: ${scorePercentage.toFixed(2)}%</p>
-                        `;
-                        return;
-                    }
-            
-                    const quiz = document.getElementById("quiz");
-                    const questionData = questions[currentQuestionIndex];
-            
-                    quiz.innerHTML = `
-                        <p class="question">${questionData.question}</p>
-                        <ul class="options">
-                            ${questionData.options.map((option, index) => `
-                                <li><button onclick="checkAnswer(this, ${index === questionData.correct})">${option}</button></li>
-                            `).join('')}
-                        </ul>
-                    `;
-            
-                    document.getElementById("next-btn").style.display = "none";
-                }
-            
-                function updateScore() {
-                    document.getElementById("correct-answers").textContent = correctAnswers;
-                    document.getElementById("total-questions").textContent = questions.length;
-                    const scorePercentage = (correctAnswers / questions.length) * 100;
-                    document.getElementById("percentage").textContent = `${scorePercentage.toFixed(2)}%`;
-                }
-            </script>
-            
+                    <script>
+                        const questions = [
+                            {
+                                question: "ما هي نسبة الكولسترول في الأغشية الخلوية؟",
+                                options: [
+                                    "5%",
+                                    "9%",
+                                    "15%",
+                                    "20%"
+                                ],
+                                correct: 1
+                            },
+                            {
+                                question: "ما الذي تسببه زيادة الكولسترول في الغشاء الخلوي؟",
+                                options: [
+                                    "يزيد من المرونة",
+                                    "يسبب ضعف في الغشاء",
+                                    "يزيد من الصلابة والمقاومة",
+                                    "يقلل من حجم الغشاء"
+                                ],
+                                correct: 2
+                            },
+                            {
+                                question: "ما هي العلاقة بين الكولسترول وأغشية خلايا شوان؟",
+                                options: [
+                                    "يحتوي على نسبة منخفضة من الكولسترول",
+                                    "يحتوي على أعلى نسبة من الكولسترول مقارنة ببقية خلايا الجسم",
+                                    "لا يحتوي على الكولسترول",
+                                    "يحتوي على نسبة متوسطة من الكولسترول"
+                                ],
+                                correct: 1
+                            },
+                            {
+                                question: "ما هي الشحوم التي توجد بكميات قليلة في الأغشية الخلوية؟",
+                                options: [
+                                    "الشحوم السكرية",
+                                    "الشحوم المعتدلة (الغليسيريدات الثلاثية)",
+                                    "الشحوم الفوسفورية",
+                                    "الشحوم الأحادية"
+                                ],
+                                correct: 1
+                            },
+                            {
+                                question: "أين تتركز الشحوم السكرية بكثرة في الأغشية الخلوية؟",
+                                options: [
+                                    "في الوريقة الداخلية من الطبقة الشحمية",
+                                    "في الوريقة الخارجية من الطبقة الشحمية",
+                                    "في السيتوبلازم",
+                                    "في النواة"
+                                ],
+                                correct: 1
+                            },
+                            {
+                                question: "ماذا يعتقد أن دور الشحوم السكرية في الوريقة الخارجية؟",
+                                options: [
+                                    "أن تكون جزءاً من الهيكل الخلوي",
+                                    "مساعدة في تعرف خلايا الجملة المناعية على خلايا الجسم نفسه",
+                                    "زيادة مرونة الغشاء",
+                                    "تقوية الغشاء ضد المؤثرات الخارجية"
+                                ],
+                                correct: 1
+                            },
+                            {
+                                question: "ما هو توزع الفوسفوليبيدات في معظم الأغشية الخلوية؟",
+                                options: [
+                                    "متماثل في جميع مناطق الغشاء",
+                                    "غير متماثل في بعض الخلايا مثل كريات الدم الحمراء",
+                                    "موزع بشكل عشوائي",
+                                    "لا يتوزع بشكل معين"
+                                ],
+                                correct: 1
+                            },
+                            {
+                                question: "أي من الفوسفوليبيدات يميل للوجود في الوريقة الداخلية للغشاء؟",
+                                options: [
+                                    "فوسفاتيديل كولين",
+                                    "فوسفاتيديل سيرين",
+                                    "فوسفاتيديل إيتانول أمين",
+                                    "ب و ج"
+                                ],
+                                correct: 3
+                            },
+                            {
+                                question: "أي من الفوسفوليبيدات يميل للوجود في الوريقة الخارجية للغشاء؟",
+                                options: [
+                                    "فوسفاتيديل سيرين",
+                                    "فوسفاتيديل إيتانول أمين",
+                                    "فوسفاتيديل كولين",
+                                    "فوسفاتيديل جلوكوز"
+                                ],
+                                correct: 2
+                            },
+                            {
+                                question: "ما هو دور الكولسترول في خلايا شوان؟",
+                                options: [
+                                    "زيادة المرونة",
+                                    "زيادة العزل الكهربائي",
+                                    "تحسين عملية التمثيل الغذائي",
+                                    "تقليل التكاثر الخلوي"
+                                ],
+                                correct: 1
+                            }
+                        ];
+                    
+                        let currentQuestionIndex = 0;
+                        let correctAnswers = 0;  // متغير لحساب الإجابات الصحيحة
+                    
+                        function checkAnswer(button, isCorrect) {
+                            const buttons = document.querySelectorAll(".options button");
+                            buttons.forEach(btn => btn.disabled = true);
+                    
+                            if (isCorrect) {
+                                button.classList.add("correct");
+                                correctAnswers++;  // زيادة عدد الإجابات الصحيحة
+                            } else {
+                                button.classList.add("wrong");
+                                buttons[questions[currentQuestionIndex].correct].classList.add("correct");
+                            }
+                    
+                            // تحديث العداد والنسبة
+                            updateScore();
+                            
+                            document.getElementById("next-btn").style.display = "block";
+                        }
+                    
+                        function loadNextQuestion() {
+                            currentQuestionIndex++;
+                    
+                            if (currentQuestionIndex >= questions.length) {
+                                // عند الانتهاء من الأسئلة
+                                const scorePercentage = (correctAnswers / questions.length) * 100;
+                                document.querySelector(".quiz-container").innerHTML = `
+                                    <h1 style='color: black;'>انتهى الاختبار</h1>
+                                    <p style='color: black;'>عمل جيد</p>
+                                    <p>الإجابات الصحيحة: ${correctAnswers} من ${questions.length}</p>
+                                    <p>النسبة: ${scorePercentage.toFixed(2)}%</p>
+                                `;
+                                return;
+                            }
+                    
+                            const quiz = document.getElementById("quiz");
+                            const questionData = questions[currentQuestionIndex];
+                    
+                            quiz.innerHTML = `
+                                <p class="question">${questionData.question}</p>
+                                <ul class="options">
+                                    ${questionData.options.map((option, index) => `
+                                        <li><button onclick="checkAnswer(this, ${index === questionData.correct})">${option}</button></li>
+                                    `).join('')}
+                                </ul>
+                            `;
+                    
+                            document.getElementById("next-btn").style.display = "none";
+                        }
+                    
+                        function updateScore() {
+                            document.getElementById("correct-answers").textContent = correctAnswers;
+                            document.getElementById("total-questions").textContent = questions.length;
+                            const scorePercentage = (correctAnswers / questions.length) * 100;
+                            document.getElementById("percentage").textContent = `${scorePercentage.toFixed(2)}%`;
+                        }
+                    </script>
+                    
+        </body>
+        </html>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
