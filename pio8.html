@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كلية الهندسة المعلوماتية - لوحة المواد</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .card-body a{
+            border: #00bbff;
+            background-color: #00bbff !important;
+
+        }
+
+        .course-card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+        }
+
+        .card-header {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .progress-green {
+            background-color: #00bbff !important;
+        }
+
+        .progress-yellow {
+            background-color: #00bbff !important;
+        }
+
+        .progress-red {
+            background-color: #00bbff !important;
+        }
+
+        .header-green {
+            background-color: #00bbff !important;
+        }
+
+        .header-yellow {
+            background-color: #00bbff !important;
+        }
+
+        .header-red {
+            background-color: #00bbff !important;
+        }
+
+        .card-green {
+            border-color: #00bbff;
+        }
+
+        .card-yellow {
+            border-color: #00bbff;
+        }
+
+        .card-red {
+            border-color: #00bbff;
+        }
+
+        .navbar {
+            background-color: #00bbff;
+            margin-bottom: 2rem;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: rgba(255,255,255,0.9) !important;
+        }
+
+        .nav-link:hover {
+            color: white !important;
+        }
+
+        .course-actions {
+            display: flex;
+            gap: 5px;
+        }
+
+        .action-icon {
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .action-icon:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">كلية  الصيدلة</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-book"></i> المواد</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-book"></i> المواد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i>  المطور</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+        <!DOCTYPE html>
+        <html dir="rtl" lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>برمجة 3 - المحتوى التعليمي</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+                
+                body {
+                    font-family: 'Cairo', sans-serif;
+                    background-color: #f5f5f5;
+                }
+        
+          </style>
+        </head>
+        <body>
+            
+            <div class="container py-5">
+                    <style>
+                        body {
+                            font-family: 'Poppins', sans-serif;
+                            background: linear-gradient(135deg, #ffffff, #00bbff);
+                            margin: 0;
+                            padding: 0;
+                            justify-content: center;
+                            align-items: center;
+                            min-height: 100vh;
+                            color: #fff;
+                        }
+                
+                        .quiz-container {
+                            background: rgba(255, 255, 255, 0.9);
+                            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+                            border-radius: 20px;
+                            padding: 30px;
+                            max-width: 700px;
+                            width: 90%;
+                            text-align: center;
+                            padding: 20px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            margin-left: 20px;
+                            margin-right: 20px;
+                        }
+                
+                        .quiz-header {
+                            margin-bottom: 30px;
+                        }
+                
+                        .quiz-header h1 {
+                            font-size: 28px;
+                            color: #333;
+                            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                        }
+                
+                        .question {
+                            font-size: 20px;
+                            margin-bottom: 20px;
+                            color: #444;
+                        }
+                
+                        .options {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+                
+                        .options li {
+                            margin-bottom: 15px;
+                        }
+                
+                        .options button {
+                            width: 100%;
+                            padding: 15px;
+                            font-size: 18px;
+                            border: none;
+                            border-radius: 10px;
+                            cursor: pointer;
+                            background-color: #2575fc;
+                            color: #fff;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                            transition: transform 0.3s, background-color 0.3s;
+                        }
+                
+                        .options button:hover {
+                            background-color: #6a11cb;
+                            transform: scale(1.05);
+                        }
+                
+                        .options button.correct {
+                            background-color: #28a745 !important;
+                        }
+                
+                        .options button.wrong {
+                            background-color: #dc3545 !important;
+                        }
+                
+                        .next-btn {
+                            display: none;
+                            margin-top: 30px;
+                            padding: 12px 30px;
+                            font-size: 18px;
+                            border: none;
+                            border-radius: 10px;
+                            background-color: #6a11cb;
+                            color: #fff;
+                            cursor: pointer;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                            transition: transform 0.3s, background-color 0.3s;
+                        }
+                
+                        .next-btn:hover {
+                            background-color: #2575fc;
+                            transform: scale(1.05);
+                        }
+                        #score-container {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            max-width: 400px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        #score-container h3 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        #score-container p {
+            font-size: 18px;
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+        
+        #score-container p span {
+            font-weight: bold;
+        }
+        
+        #correct-answers, #total-questions {
+            color: #27ae60;
+        }
+        
+        #percentage {
+            color: #e67e22;
+        }
+        
+        #score-container div {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        
+        
+            </style>
+        
+                    </style>
+                </head>
+
+        
+                    <a href="index.html" class="btn btn-outline-primary mb-4">
+                        <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
+                    </a>
+                    <div class="quiz-container">
+                        <div class="quiz-header">
+                            <h1> Quiz</h1>
+                        </div>
+                        <div id="quiz">
+                            <p class="question"> هل انت جاهز ؟ </p>
+                            <ul class="options">
+                                <li><button onclick="checkAnswer(this, true)"> نعم</button></li>
+                                <li><button onclick="checkAnswer(this, true)">لا </button></li>
+                            </ul>
+                        </div>
+                        <center><button id="next-btn" class="next-btn" onclick="loadNextQuestion()">Next Question</button></center>
+                        <div id="score-container">
+                            <p>الإجابات الصحيحة: <span id="correct-answers">0</span> من <span id="total-questions">0</span></p>
+                            <p>النسبة: <span id="percentage">0%</span></p>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        const questions = [
+                        {
+    question: "ما هي المكونات الأساسية المشتركة بين الخلية الحيوانية والنباتية؟",
+    options: [
+        "الجدار الخلوي والصانعات الخضراء",
+        "سيتوبلاسم، نواة، جهاز غولجي، ميتوكوندريا",
+        "فجوة مركزية كبيرة",
+        "مريكزات"
+    ],
+    correct: 1
+},
+{
+    question: "ما المكون الذي يميز الخلية النباتية عن الحيوانية؟",
+    options: [
+        "الميتوكوندريا",
+        "الغشاء السيتوبلاسمي",
+        "الجدار الخلوي",
+        "المريكزات"
+    ],
+    correct: 2
+},
+{
+    question: "ما وظيفة الجدار الخلوي في مقاومة الضغط الانتفاخي؟",
+    options: [
+        "تعزيز شكل الخلية",
+        "مقاومة الضغط الاسموزي",
+        "الحماية من الجراثيم",
+        "توفير المرونة"
+    ],
+    correct: 1
+},
+{
+    question: "أي من التالي غير موجود في الخلية النباتية؟",
+    options: [
+        "فجوة مركزية كبيرة",
+        "مريكزات",
+        "الصانعات الخضراء",
+        "الجدار الخلوي"
+    ],
+    correct: 1
+},
+{
+    question: "ما هي المادة الرئيسية التي تشكل ألياف الجدار الخلوي؟",
+    options: [
+        "البروتينات",
+        "السيليلوز",
+        "عديدات السكاكر",
+        "الماء"
+    ],
+    correct: 1
+},
+{
+    question: "ما الدور الرئيسي للبروتينات الموجودة في الجدار الخلوي الأولي؟",
+    options: [
+        "توفير المرونة لجدار الخلية",
+        "تعزيز صلابة الخلية",
+        "الحماية من الأشعة فوق البنفسجية",
+        "تشكيل ممر للمواد"
+    ],
+    correct: 0
+},
+{
+    question: "ما المكون الذي يجعل الغشاء السيتوبلاسمي في الخلية النباتية غير معرض للوسط الخارجي؟",
+    options: [
+        "الجدار الخلوي",
+        "الفجوة المركزية",
+        "السيتوبلاسم",
+        "الميتوكوندريا"
+    ],
+    correct: 0
+},
+{
+    question: "ما الميزة التي تفتقر إليها معظم الخلايا النباتية؟",
+    options: [
+        "المريكزات",
+        "الغشاء السيتوبلاسمي",
+        "الجدار الخلوي",
+        "الصانعات الخضراء"
+    ],
+    correct: 0
+},
+{
+    question: "ما هو الدور الأساسي للجدار الخلوي في الحماية من المؤثرات الخارجية؟",
+    options: [
+        "مقاومة الضغط الاسموزي",
+        "الحماية من الفطريات والجراثيم",
+        "توفير القوام للخلية",
+        "نقل المواد"
+    ],
+    correct: 1
+},
+{
+    question: "ما هي الخطوة التي يبدأ فيها تشكل الصفيحة الوسطى خلال الانقسام الخلوي؟",
+    options: [
+        "الطور التمهيدي",
+        "الطور الاستوائي",
+        "الطور الانفصالي",
+        "الطور الرابع"
+    ],
+    correct: 3
+},
+{
+    question: "ما هي المادة الرئيسية التي تتكون منها الصفيحة الوسطى؟",
+    options: [
+        "السيليلوز",
+        "الهيميسيللوز",
+        "البكتين",
+        "البروتينات"
+    ],
+    correct: 2
+},
+{
+    question: "الوظيفة الأساسية للصفيحة الوسطى؟",
+    options: [
+        "مقاومة الضغط الاسموزي",
+        "تأمين اتصال الخلايا المتجاورة",
+        "دعم الجدار الأولي",
+        "حماية الخلية من المؤثرات الخارجية"
+    ],
+    correct: 1
+},
+{
+    question: "ماذا يحدث عند انحلال الصفيحة الوسطى بفعل إنزيمات تفكيك المواد البكتينية؟",
+    options: [
+        "تزداد مقاومة الخلايا",
+        "يتوقف نمو الخلايا",
+        "تنفصل الخلايا وتتباعد",
+        "تصبح الخلايا غير مرنة"
+    ],
+    correct: 2
+},
+{
+    question: "ما هي سماكة الجدار الأولي في الخلية النباتية؟",
+    options: [
+        "1-3 ميكرون",
+        "3-5 ميكرون",
+        "5-7 ميكرون",
+        "7-10 ميكرون"
+    ],
+    correct: 0
+},
+{
+    question: "ما الذي يميز الجدار الأولي عن الصفيحة الوسطى؟",
+    options: [
+        "مرونته وسماكته",
+        "احتواؤه على البروتينات",
+        "وجود فتحات للنقل بين الخلايا",
+        "مقاومته الميكانيكية العالية"
+    ],
+    correct: 0
+},
+{
+    question: "في أي نوع من الخلايا النباتية يوجد الجدار الأولي فقط؟",
+    options: [
+        "الخلايا البالغة",
+        "الخلايا المتمايزة",
+        "الخلايا الفتية غير المتمايزة",
+        "الخلايا المصابة بالفطريات"
+    ],
+    correct: 2
+},
+{
+    question: "ما هو الدور الأساسي للجدار الأولي في الخلايا النباتية؟",
+    options: [
+        "حماية الخلية من الجراثيم",
+        "السماح بنمو الخلايا الفتية واستطالتها",
+        "دعم الصفيحة الوسطى",
+        "مقاومة الضغط الاسموزي"
+    ],
+    correct: 1
+},
+{
+    question: "ما المركبات الأساسية التي يتكون منها الجدار الأولي؟",
+    options: [
+        "البروتينات والماء",
+        "السيليلوز والهيميسيللوز والبكتين",
+        "البكتين والفجوات",
+        "الهيميسيللوز والإنزيمات"
+    ],
+    correct: 1
+},
+{
+    question: "ما الذي يسمح بمرور المواد بين الخلايا المتجاورة عبر الصفيحة الوسطى؟",
+    options: [
+        "المرونة العالية للصفيحة",
+        "الحفر أو النقر",
+        "البروتينات الخاصة",
+        "مقاومة الصفيحة للماء"
+    ],
+    correct: 1
+},
+{
+    question: "متى يبدأ تشكل الجدار الخلوي الثانوي؟",
+    options: [
+        "في الطور التمهيدي",
+        "عند نهاية طور النمو للخلية",
+        "بعد الانقسام الخلوي مباشرة",
+        "قبل تشكل الجدار الأولي"
+    ],
+    correct: 1
+},
+{
+    question: "ما الوظيفة الأساسية للجدار الخلوي الثانوي؟",
+    options: [
+        "السماح بنمو الخلية",
+        "توفير حماية إضافية للخلية",
+        "تنظيم مرور المواد بين الخلايا",
+        "تقليل كمية الماء داخل الخلية"
+    ],
+    correct: 1
+},
+{
+    question: "كيف تتوضع ألياف السيللوز في الجدار الثانوي؟",
+    options: [
+        "بشكل عشوائي",
+        "بشكل طبقات متوازية إلى الداخل",
+        "بشكل حلزوني",
+        "بشكل عمودي على الجدار الأولي"
+    ],
+    correct: 1
+},
+{
+    question: "ما الفرق الكيميائي الأساسي بين السيللوز والهيميسيللوز؟",
+    options: [
+        "السيللوز يتكون من وحدات غلوكوز فقط",
+        "الهيميسيللوز يضم مجموعة غير متجانسة من عديدات السكاكر",
+        "السيللوز يحتوي على سكريات خماسية",
+        "الهيميسيللوز لا يرتبط مع ألياف السيللوز"
+    ],
+    correct: 1
+},
+{
+    question: "ما هي السكريات السداسية الناتجة عن حلمأة الهيميسيللوز؟",
+    options: [
+        "أرابينوز وأبيوز",
+        "غلوكوز ومانوز وغالاكتوز",
+        "حمض الغالاكتورونيك",
+        "بكتات الكالسيوم"
+    ],
+    correct: 1
+},
+{
+    question: "ما هي السلاسل الرئيسة للمركبات البكتينية مكونة من؟",
+    options: [
+        "حمض الغالاكتورونيك",
+        "ألياف السيللوز",
+        "عديدات السكاكر غير المتجانسة",
+        "البروتينات"
+    ],
+    correct: 0
+},
+{
+    question: "أين يتم تصنيع السيللوز في الخلية النباتية؟",
+    options: [
+        "جهاز غولجي",
+        "الغشاء السيتوبلاسمي",
+        "الصفيحة الوسطى",
+        "داخل الفجوة"
+    ],
+    correct: 1
+},
+{
+    question: "ما المركب المستخدم في الصناعات الغذائية لتشكيل الهلام؟",
+    options: [
+        "السيللوز",
+        "البكتين",
+        "الهيميسيللوز",
+        "حمض الغالاكتورونيك"
+    ],
+    correct: 1
+},
+{
+    question: "ما الذي يشكل مركب 'طبق البيض' (egg-box) في الجدار الخلوي؟",
+    options: [
+        "ارتباط ألياف السيللوز",
+        "ارتباط حمض الغالاكتورونيك مع شوارد الكالسيوم",
+        "طبقات الهيميسيللوز",
+        "الصفيحة الوسطى"
+    ],
+    correct: 1
+},
+{
+    question: "ما هي العملية التي تؤدي إلى توضع مادة الخشبين في الجدر الخلوية؟",
+    options: [
+        "التمعدن",
+        "التخشب",
+        "التصلب",
+        "التسلس"
+    ],
+    correct: 1
+},
+{
+    question: "ما المركب الكيميائي الأساسي الذي يتكون منه الخشبين؟",
+    options: [
+        "حمض الغالاكتورونيك",
+        "فينيل بروبان",
+        "الجلوكوز",
+        "البكتين"
+    ],
+    correct: 1
+},
+{
+    question: "كيف تؤثر عملية التخشب على الجدار الخلوي؟",
+    options: [
+        "تزيد من مرونة الجدار",
+        "تقلل من نفوذية الجدار للماء",
+        "تزيد من صلابته ومقاومته للماء",
+        "تجعل الجدار أكثر نفاذية"
+    ],
+    correct: 2
+},
+{
+    question: "ماذا يحدث لخلايا الجدار الخلوي بعد اكتمال عملية التخشب؟",
+    options: [
+        "تبقى حية وتستمر في النمو",
+        "تتحول إلى خلايا خشبية تموت",
+        "تزداد مقاومة الخلية للأشعة",
+        "تتحول إلى خلايا غشائية"
+    ],
+    correct: 1
+},
+{
+    question: "ما هي المادة التي يتم إضافتها إلى الجدار الخلوي خلال عملية التمعدن؟",
+    options: [
+        "كربونات الكالسيوم أو أكاسيد السيليس",
+        "حمض الغالاكتورونيك",
+        "السيليلوز",
+        "البروتينات"
+    ],
+    correct: 0
+},
+{
+    question: "أين تحدث ظاهرة توضع كربونات الكالسيوم (التكلس) بشكل خاص؟",
+    options: [
+        "في خلايا البشرة لنباتات الفصيلة القرعية",
+        "في الجدار الأولي للخلايا النباتية",
+        "في خلايا الخشب فقط",
+        "في خلايا الطحالب الحمراء فقط"
+    ],
+    correct: 0
+},
+{
+    question: "في أي نوع من الطحالب تكون ظاهرة التمعدن أكثر وضوحاً؟",
+    options: [
+        "الطحالب الحمراء مثل طحلب كورالينا",
+        "الطحالب الخضراء",
+        "الطحالب البنية",
+        "الطحالب الزرقاء"
+    ],
+    correct: 0
+},
+{
+    question: "في أي نوع من النباتات يلاحظ تشرب الجدر الخلوية بأكاسيد السيليس (التسلس) بشكل خاص؟",
+    options: [
+        "الفصيلة السعدية والفصيلة النجيلية",
+        "الفصيلة القرعية فقط",
+        "نباتات الزهور",
+        "النباتات الصحراوية فقط"
+    ],
+    correct: 0
+},
+{
+    question: "ما الذي يشكل الأساس لبعض أنواع الصخور عند الطحالب الحمراء؟",
+    options: [
+        "هياكل الطحالب الصلبة",
+        "جدران الخلايا",
+        "البكتين الموجود في الجدار",
+        "أكاسيد السيليس"
+    ],
+    correct: 0
+},
+{
+    question: "ما الفرق بين التمعدن والتخشب في الجدر الخلوية؟",
+    options: [
+        "التمعدن يضيف أكاسيد السيليس فقط",
+        "التخشب يتضمن توضع الخشبين لزيادة الصلابة",
+        "التمعدن يجعل الجدار أكثر مرونة",
+        "التخشب يزيل الماء من الجدار الخلوي"
+    ],
+    correct: 1
+},
+{
+    question: "ما هي الظاهرة التي تتم بموجبها تشرب الجدر الخلوية الخارجية لخلايا البشرة بمادة القشور؟",
+    options: ["التفلن", "التكيتن", "التهلم", "التصمغ"],
+    correct: 1
+},
+{
+    question: "ما هي المادة التي توضع على السطح الخارجي للبشرة وتدعى قشيرة؟",
+    options: ["الفلين", "الكيوتين", "الهلام", "المخاط"],
+    correct: 1
+},
+{
+    question: "ما هي خاصية الكيوتين أو القشيرين؟",
+    options: ["مادة نفوذة للماء", "مادة غير نفوذة للماء", "مادة سكرية", "مادة غذائية"],
+    correct: 1
+},
+{
+    question: "ماذا يستخدم لتلوين القشيرة أو مادة القشيرين؟",
+    options: ["كربونات الصوديوم", "ملونات المواد الدسمة", "أكسيد الألومنيوم", "حامض الكبريتيك"],
+    correct: 1
+},
+{
+    question: "أين يتم توضع الفلين في الخلية؟",
+    options: ["السطح الخارجي", "السطح الداخلي", "داخل الميتوكوندريا", "في النواة"],
+    correct: 1
+},
+{
+    question: "ما هي المواد التي يتكون منها الفلين؟",
+    options: ["مواد كيميائية فقط", "مواد كيميائية وأحماض دهنية", "مواد سكرية وأحماض دهنية", "مواد بروتينية وأحماض أمينية"],
+    correct: 1
+},
+{
+    question: "ما هي النتيجة التي تحدث بعد عملية التفلن؟",
+    options: ["تكون خلايا جديدة", "انحلال البروتوبلازم", "تفعيل الأنسجة", "نمو الخلايا"],
+    correct: 1
+},
+{
+    question: "ماذا يحدث في عملية التهلم؟",
+    options: ["تحول المركبات البكتينية إلى بكتين قابل للانحلال", "تغير في لون الثمار", "انفصال الخلايا النباتية", "تفاعل مع الهواء"],
+    correct: 0
+},
+{
+    question: "في أي أنواع الفواكه يتم مشاهدة التهلم بشكل خاص؟",
+    options: ["التفاح", "عنب الدب والبطيخ الأصفر", "البرتقال", "العنب"],
+    correct: 1
+},
+{
+    question: "ماذا ينتج عند تحلل النسيج مع الإفراز الغزير للمخاط النباتي؟",
+    options: ["الصمغ النباتي", "الزيوت النباتية", "الخلايا البرانشيمية", "الألياف النباتية"],
+    correct: 0
+},
+{
+    question: "ما هي المادة التي تحتوي عليها الفجوات وتُعرف بالعصارة الفجوية؟",
+    options: ["أملاح معدنية", "سكريات متنوعة", "الماء والمواد المنحلة", "مواد عضوية فقط"],
+    correct: 2
+},
+{
+    question: "كيف يظهر تركيب الفجوة في المجهر الإلكتروني؟",
+    options: ["محاطة بغشاء مزدوج", "محاطة بغشاء مفرد", "لا يحتوي على غشاء", "محاطة بنواة"],
+    correct: 1
+},
+{
+    question: "في أي مرحلة تتشكل فجوة مركزية كبيرة في الخلايا النباتية؟",
+    options: ["في الخلايا الميرستيمية", "في الأنسجة البالغة المتمايزة", "في الأنسجة الجنينية", "في الخلايا غير المتمايزة"],
+    correct: 1
+},
+{
+    question: "ماذا يحتوي غشاء الفجوة (التونوبلاست)؟",
+    options: ["دهون فقط", "بروتينات فقط", "تركيب كيميائي مشابه للغشاء السيتوبلازمي", "تركيب كيميائي مختلف تمامًا"],
+    correct: 2
+},
+{
+    question: "ما هي المواد العضوية التي يمكن أن تحتوي عليها العصارة الفجوية؟",
+    options: ["الحموض العضوية مثل حمض التفاح وحمض الليمون", "المواد المشعة", "المعادن الثقيلة", "الفيتامينات فقط"],
+    correct: 0
+},
+{
+    question: "أي نوع من المواد يُعتبر من المواد المنحلة في العصارة الفجوية؟",
+    options: ["الفيتامينات فقط", "المواد العفصية والملونات", "البروتينات", "الخلايا البكتيرية"],
+    correct: 1
+},
+{
+    question: "ما هي الأصباغ التي قد تكون موجودة في العصارة الفجوية لبعض النباتات؟",
+    options: ["الأنثوسيانيين والفلافونيات", "الكلوروفيل فقط", "الكاروتينات", "الكلوريلا"],
+    correct: 0
+},
+{
+    question: "ما هو المكون الأساسي للعصارة الفجوية في الخلايا الميرستيمية؟",
+    options: ["سكريات فقط", "مواد عضوية معقدة", "ماء مع مواد متنوعة", "أحماض أمينية"],
+    correct: 2
+},
+{
+    question: "ما هي وظيفة العصارة الفجوية في الخلايا النباتية؟",
+    options: ["تخزين المواد المغذية فقط", "تخزين المواد المنحلة والفضلات", "إنتاج الطاقة", "تقسيم الخلايا"],
+    correct: 1
+},
+{
+    question: "ماذا ينتج عن اتحاد السكريات مع الأنثوسيانيدين في العصارة الفجوية؟",
+    options: ["أحماض أمينية", "أنثوسيانين + ماء", "سكر + فيتامينات", "مركبات فلافونية"],
+    correct: 1
+},
+{
+    question: "ما هي المادة التي تتبلور في العصارة الفجوية بشكل شائع في النباتات؟",
+    options: ["أوكزالات الكالسيوم", "كربونات الكالسيوم", "حمض الأوكزاليك", "سكر الفركتوز"],
+    correct: 0
+},
+{
+    question: "أين يتم تواجد كربونات الكالسيوم في العصارة الفجوية؟",
+    options: ["في خلايا اللحاء", "في جدران الخلايا بالبشرة العليا لبعض النباتات", "في الأنسجة الوعائية", "في خلايا السيتوبلازم"],
+    correct: 1
+},
+{
+    question: "ما هو السبب وراء تشكل حبات الألورون في البذور الناضجة؟",
+    options: ["تراكم السكريات", "تكثف المواد البروتينية وفقدان الماء من الفجوات", "تراكم الأملاح المعدنية", "زيادة نسبة الأحماض الدهنية"],
+    correct: 1
+},
+{
+    question: "ماذا يحدث عندما تنتفخ حبات الألورون أثناء إنتاش البذور؟",
+    options: ["تفكك المواد البروتينية في العصارة الفجوية", "زيادة حجم الفجوات", "تشكل خلايا جديدة", "تحول المواد العضوية إلى أملاح معدنية"],
+    correct: 0
+},
+{
+    question: "ما هو نوع البروتينات الموجودة في حبات الألورون؟",
+    options: ["بروتينات متبلورة", "بروتينات غير متبلورة", "سكريات متنوعة", "أحماض أمينية"],
+    correct: 0
+},
+{
+    question: "كيف تتغير حبات الألورون أثناء إنتاش البذور؟",
+    options: ["تزداد في الحجم وتتصلب", "تفقد محتواها البروتيني وغير البروتيني وتنحل", "تتكون فجوات جديدة", "لا تتغير في الحجم"],
+    correct: 1
+},
+{
+    question: "ماذا يحتوي جسم الألورون في نبات الخروع؟",
+    options: ["أملاح كيميائية فقط", "مادة بروتينية متجانسة", "جسم خماسي الشكل من مواد بروتينية", "مكونات بروتينية وأملاح معدنية"],
+    correct: 2
+},
+{
+    question: "أين يمكن مشاهدة البلورات الموشورية في النباتات؟",
+    options: ["في أوراق البرتقال", "في جذور النباتات", "في أنسجة اللحاء", "في حبوب اللقاح"],
+    correct: 0
+},
+{
+    question: "ماذا يحدث عند نزع الماء من البذور؟",
+    options: ["تجزؤ الفجوات الكبيرة إلى فجوات صغيرة", "زيادة حجم الألورون", "تكثف الأملاح المعدنية", "تحول المواد العضوية إلى مواد سكرية"],
+    correct: 0
+},
+{
+    question: "ما هو النوع الذي يتميز بوجود أجسام كروية معدنية في حبات الألورون؟",
+    options: ["القمح والشوفان", "الفاصولياء", "الخروع", "أ و ج"],
+    correct: 3
+}
+
+
+                        ];
+                    
+                        let currentQuestionIndex = 0;
+                        let correctAnswers = 0;  // متغير لحساب الإجابات الصحيحة
+                    
+                        function checkAnswer(button, isCorrect) {
+                            const buttons = document.querySelectorAll(".options button");
+                            buttons.forEach(btn => btn.disabled = true);
+                    
+                            if (isCorrect) {
+                                button.classList.add("correct");
+                                correctAnswers++;  // زيادة عدد الإجابات الصحيحة
+                            } else {
+                                button.classList.add("wrong");
+                                buttons[questions[currentQuestionIndex].correct].classList.add("correct");
+                            }
+                    
+                            // تحديث العداد والنسبة
+                            updateScore();
+                            
+                            document.getElementById("next-btn").style.display = "block";
+                        }
+                    
+                        function loadNextQuestion() {
+                            currentQuestionIndex++;
+                    
+                            if (currentQuestionIndex >= questions.length) {
+                                // عند الانتهاء من الأسئلة
+                                const scorePercentage = (correctAnswers / questions.length) * 100;
+                                document.querySelector(".quiz-container").innerHTML = `
+                                    <h1 style='color: black;'>انتهى الاختبار</h1>
+                                    <p style='color: black;'>عمل جيد</p>
+                                    <p>الإجابات الصحيحة: ${correctAnswers} من ${questions.length}</p>
+                                    <p>النسبة: ${scorePercentage.toFixed(2)}%</p>
+                                `;
+                                return;
+                            }
+                    
+                            const quiz = document.getElementById("quiz");
+                            const questionData = questions[currentQuestionIndex];
+                    
+                            quiz.innerHTML = `
+                                <p class="question">${questionData.question}</p>
+                                <ul class="options">
+                                    ${questionData.options.map((option, index) => `
+                                        <li><button onclick="checkAnswer(this, ${index === questionData.correct})">${option}</button></li>
+                                    `).join('')}
+                                </ul>
+                            `;
+                    
+                            document.getElementById("next-btn").style.display = "none";
+                        }
+                    
+                        function updateScore() {
+                            document.getElementById("correct-answers").textContent = correctAnswers;
+                            document.getElementById("total-questions").textContent = questions.length;
+                            const scorePercentage = (correctAnswers / questions.length) * 100;
+                            document.getElementById("percentage").textContent = `${scorePercentage.toFixed(2)}%`;
+                        }
+                    </script>
+                    
+        </body>
+        </html>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
